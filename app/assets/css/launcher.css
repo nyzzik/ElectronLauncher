@@ -111,10 +111,16 @@ body, button {
     justify-content: center;
     align-items: center;
     position: relative;
+    left:35px;
 }
 #frameImage {
     height: 15px;
-    filter: grayscale(100%);
+    /*filter: grayscale(100%);*/
+    
+}
+#frameImage2{
+    height: 15px;
+    right:10px;
 }
 
 /* Windows frame button dock. */
@@ -2676,23 +2682,41 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Logo image. */
 #image_seal {
-    height: 70px;
+    height: 140px;
     width: auto;
     position: relative;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     box-sizing: border-box;
-    border-radius: 50%;
+    right:100px;
+    
+    
 }
-
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    }
 /* Logo container styles. */
 #image_seal_container {
     position: relative;
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    margin-top: 50px;
+    height: 140px;
+    width: 140px;
+    
+    margin-top: 40px;
+    
 }
-
+#imageseal {
+    height: 140px;
+    width: 140px;
+    position:relative;
+    /*border: 2px solid white;*/
+    right:220px
+    
+    
+    
+}
 /* Logo container styles w/ update. */
 #image_seal_container[update]{
     cursor: pointer
@@ -2778,6 +2802,7 @@ input:checked + .toggleSwitchSlider:before {
     top: 50px;
     align-items: flex-start;
     height: calc(100% - 50px);
+    right:20px;
 }
 
 /* Right hand user content container. */
@@ -2840,7 +2865,7 @@ input:checked + .toggleSwitchSlider:before {
     letter-spacing: 1px;
     text-shadow: 0px 0px 20px black;
     position: absolute;
-    right: 95px;
+    left: 1.5px;
     text-align: right;
     -webkit-user-select: initial;
 }
@@ -2890,7 +2915,7 @@ input:checked + .toggleSwitchSlider:before {
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
 .mediaSVG:active {
-    height: 20px;
+    height: 24px;
 }
 
 /* Social media URL shared styles. */
@@ -2938,6 +2963,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 12px;
     line-height: 20px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+    left:50px;
 }
 #settingsTooltip::after {
     content: " ";
@@ -3784,5 +3810,5 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Class which is applied when the spinner image is spinning. */
 .rotating {
-    animation: rotating 10s linear infinite;
+    animation: rotating 1s linear infinite;
 }

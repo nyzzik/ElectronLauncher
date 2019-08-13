@@ -95,7 +95,7 @@ function createWindow() {
     win = new BrowserWindow({
         width: 980,
         height: 552,
-        icon: getPlatformIcon('SealCircle'),
+        icon: getPlatformIcon('Nytro'),
         frame: false,
         webPreferences: {
             preload: path.join(__dirname, 'app', 'assets', 'js', 'preloader.js'),
@@ -103,6 +103,7 @@ function createWindow() {
             contextIsolation: false
         },
         backgroundColor: '#171614'
+        
     })
 
     ejse.data('bkid', Math.floor((Math.random() * fs.readdirSync(path.join(__dirname, 'app', 'assets', 'images', 'backgrounds')).length)))
@@ -117,9 +118,9 @@ function createWindow() {
         win.show()
     })*/
 
-    win.removeMenu()
+    win.setMenu(null)
 
-    win.setResizable(true)
+    win.setResizable(false)
 
     win.on('closed', () => {
         win = null
