@@ -1,13 +1,13 @@
 {
-  "name": "electronlauncher",
+  "name": "nytrolauncher",
   "version": "1.6.0",
   "productName": "Nytro Electron Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "author": "nyzzik (https://github.com/nyzzik/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/dscalzi/NytroElectronLauncher",
+  "homepage": "https://github.com/nyzzik/NytroElectronLauncher",
   "bugs": {
-    "url": "https://github.com/dscalzi/ElectronLauncher/issues"
+    "url": "https://github.com/nyzzik/NytroElectronLauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -35,15 +35,15 @@
     "github-syntax-dark": "^0.5.0",
     "jquery": "^3.4.1",
     "request": "^2.88.0",
-    "semver": "^6.2.0",
+    "semver": "^6.3.0",
     "tar-fs": "^2.0.0",
     "winreg": "^1.2.4"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "electron": "^5.0.6",
-    "electron-builder": "^21.0.15",
-    "eslint": "^6.0.1"
+    "electron": "^6.0.4",
+    "electron-builder": "^21.2.0",
+    "eslint": "^6.2.2"
   },
   "repository": {
     "type": "git",
