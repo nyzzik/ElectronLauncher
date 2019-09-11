@@ -41,7 +41,6 @@ deploy:
   provider: releases
   api_key:
     secure: VqbyMvvBLacTS/hiWIcS8v8LMIdtYM1dHOUuj/aAIWmabm++me7vSWEwhUlRBdInBKbgsngGvEtxUPdEnwiX00YLq9/S2k9/fSlHuyfEMIZtGgHqzEwHlUt72Kiny9BmTfbJnw5qQYW3+VX+oxkc5Ax0BOHqLlZxCiC+pOArnkbNLH5sVSWMyA/g/ensMobuN1BH5woDiKwQhun+wdfp5AbhyC/nGIBY6X///gaoenV5nVE0vlITB55eZV6uhm1oG1Mr4czwHI8Fvyz4HdD1AkG7mlo2wQi8Ejh+y6eufz6TkhIhR13WXxt4GB1O4BSRgBH293jgMzUdybedaEMdB3O4je4h799q6BxMnjn36IAQUxvOxtWvgQCL9NAwCGZZ2MQeYEFu1bjpQzv2QaPnLrwVJEyHFu5y8BLdHBKDTL7NhpsANdPYbNcWT6jByN1yPVsy85nHLcOaCXwIh5QA8Z5DE6GNoNL1H9FmzBvAmApQzVgq7yHLkWKjQ+FAgEJcnaGDT725/7yBQZzyzVldNT4l8uBRe8TsUpgg/48NlEZeFK+mVu+P6Gsg+IkZw2SsfGALayOEddbB6aHAIX7FuQznpdTmtsoK0/yQ1qOgrsvPAEoGXvFcy2G3/kdZ4nbDvQ7eJ8d4g9eGzPDqeKPhSPoOy8FYwUX0cTfVkq0YSnw=
-  file: ''
   skip_cleanup: true
   file: 
     - dist/YOURLAUNCHERNAME.dmg
