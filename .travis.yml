@@ -48,7 +48,7 @@ deploy:
   skip_cleanup: true
   draft: true
   api_key:
-    secure: LyymmL4gnKcYGJYUw8pdbbFHZj25ZgAupScZCg9XGq7uPW6H8e6pJ8pNxkq44sS0x7zbPcWOEcySFEn6CyK3k1fOfN8wtvS2ewt1dyI9oGrjmKkoNYZoSSSJ54vNwhUnzHFx4Sm8dfJQe1VASO36HJ13swY6ft4RAm2Jm1O55rM43LHyB1QIgZuQmeoVeLDl2hK7SG0qzDNsgDlgZoDnAFxXnJQKfXBrXruTzQDSJVZHJpVLZwcvpaVVx6arywQ5
+    secure: 31c4db5e31f05fc096aa8c5498bc271745b29c5f
   file: 
    - dist/*
   on:
