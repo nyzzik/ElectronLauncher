@@ -20,7 +20,8 @@ builder.build({
     config: {
         appId: 'nytrolauncher',
         productName: 'Nytro Launcher',
-        artifactName: '${productName}.${ext}',
+        artifactName: '${productName}.${ext}', 
+		copyright: 'Copyright © 2019-2020 nyzzik',
         directories: {
             buildResources: 'build',
             output: 'dist'
@@ -36,16 +37,13 @@ builder.build({
         },
         nsis: {
             oneClick: false,
-            perMachine: true,
+            perMachine: false,
             allowElevation: true,
-            installerIcon: 'build/icon.ico',
-            uninstallerIcon: 'build/icon.ico',
             allowToChangeInstallationDirectory: true
         },
         mac: {
             target: 'dmg',
-            category: 'public.app-category.games',
-            icon: 'build/icon.icns'
+            category: 'public.app-category.games'
         },
         linux: {
             target: 'AppImage',
