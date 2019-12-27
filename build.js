@@ -20,8 +20,8 @@ builder.build({
     config: {
         appId: 'nytrolauncher',
         productName: 'Nytro Launcher',
-        artifactName: '${productName}.${ext}', 
-		copyright: 'Copyright © 2019-2020 nyzzik',
+        artifactName: '${productName}.${ext}',
+        copyright: 'Copyright © 2018-2019 nyzzik',
         directories: {
             buildResources: 'build',
             output: 'dist'
@@ -32,8 +32,7 @@ builder.build({
                     target: 'nsis',
                     arch: 'x64'
                 }
-            ],
-            icon: 'build/icon.ico'
+            ]
         },
         nsis: {
             oneClick: false,

@@ -1,9 +1,9 @@
 {
-  "name": "helioslauncher",
+  "name": "nytrolauncher",
   "version": "1.7.0",
-  "productName": "NytroLauncher",
+  "productName": "Nytro Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "nyzzik (https://github.com/nyzzik/",
+  "author": "nyzzik (https://github.com/nyzzik/)",
   "license": "UNLICENSED",
   "homepage": "https://github.com/nyzzik/NytroLauncher",
   "bugs": {
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
-    "electron": "^7.1.1",
+    "electron": "^7.1.7",
     "electron-builder": "^21.2.0",
     "eslint": "^6.6.0"
   },
