@@ -1,6 +1,6 @@
 {
   "name": "nytrolauncher",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "productName": "Nytro Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "nyzzik (https://github.com/nyzzik/)",
@@ -47,6 +47,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscalzi/HeliosLauncher.git"
+    "url": "git+https://github.com/nyzzik/NytroLauncher.git"
   }
 }
