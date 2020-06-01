@@ -8,6 +8,7 @@ const path          = require('path')
 const AuthManager   = require('./assets/js/authmanager')
 const ConfigManager = require('./assets/js/configmanager')
 const DistroManager = require('./assets/js/distromanager')
+const Lang          = require('./assets/js/langloader')
 
 let rscShouldLoad = false
 let fatalStartupError = false
@@ -98,6 +99,10 @@ function showMainUI(data){
         }, 250)
         
     }, 750)
+    // Disable tabbing to the news container.
+    initNews().then(() => {
+        $('#newsContainer *').attr('tabindex', '-1')
+    })
 }
 
 function showFatalStartupError(){
@@ -126,6 +131,7 @@ function showFatalStartupError(){
 function onDistroRefresh(data){
     updateSelectedServer(data.getServer(ConfigManager.getSelectedServer()))
     refreshServerStatus()
+    initNews()
     syncModConfigurations(data)
 }
 

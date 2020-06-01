@@ -1200,7 +1200,7 @@ function populateAboutVersionInformation(){
  */
 function populateReleaseNotes(){
     $.ajax({
-        url: 'https://github.com/nyzzik/NytroElectronLauncher/releases.atom',
+        url: 'https://github.com/nyzzik/NytroLauncher/releases.atom',
         success: (data) => {
             const version = 'v' + remote.app.getVersion()
             const entries = $(data).find('entry')

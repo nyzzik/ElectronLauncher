@@ -57,8 +57,10 @@ class ProcessBuilder {
             args = args.concat(this.constructModArguments(modObj.fMods))
         }
 
-        logger.log('Launch Arguments:', args)
+        args[1] = args[1].replace(/jar.pack.xz/g, "jar");
 
+        logger.log('Launch Arguments:', args)
+        
         const child = child_process.spawn(ConfigManager.getJavaExecutable(), args, {
             cwd: this.gameDir,
             detached: ConfigManager.getLaunchDetached()
@@ -298,7 +300,7 @@ class ProcessBuilder {
 
         // Java Arguments
         if(process.platform === 'darwin'){
-            args.push('-Xdock:name=HeliosLauncher')
+            args.push('-Xdock:name=NytroLauncher')
             args.push('-Xdock:icon=' + path.join(__dirname, '..', 'images', 'minecraft.icns'))
         }
         args.push('-Xmx' + ConfigManager.getMaxRAM())
@@ -336,7 +338,7 @@ class ProcessBuilder {
 
         // Java Arguments
         if(process.platform === 'darwin'){
-            args.push('-Xdock:name=HeliosLauncher')
+            args.push('-Xdock:name=NytroLauncher')
             args.push('-Xdock:icon=' + path.join(__dirname, '..', 'images', 'minecraft.icns'))
         }
         args.push('-Xmx' + ConfigManager.getMaxRAM())
@@ -438,7 +440,7 @@ class ProcessBuilder {
                             val = args[i].replace(argDiscovery, tempNativePath)
                             break
                         case 'launcher_name':
-                            val = args[i].replace(argDiscovery, 'Helios-Launcher')
+                            val = args[i].replace(argDiscovery, 'Nytro-Launcher')
                             break
                         case 'launcher_version':
                             val = args[i].replace(argDiscovery, this.launcherVersion)
@@ -541,8 +543,13 @@ class ProcessBuilder {
         }
         
         // Mod List File Argument
-        mcArgs.push('--modListFile')
-        mcArgs.push('absolute:' + this.fmlDir)
+        if(Util.mcVersionAtLeast('1.12', this.server.getMinecraftVersion())) {
+            mcArgs.push('--modListFile')
+            mcArgs.push('absolute:' + this.fmlDir)
+        }
+
+        mcArgs.push('--user_properties')
+        mcArgs.push('{}')
 
         // LiteLoader
         if(this.usingLiteLoader){
