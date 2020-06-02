@@ -49,7 +49,7 @@ if(!isDev){
                 loggerAutoUpdaterSuccess.log('New update available', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/dscalzi/NytroLauncher/releases/download/v${info.version}/nytrolauncher-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/nyzzik/NytroLauncher/releases/download/v${info.version}/nytrolauncher-${info.version}.dmg`
                     showUpdateUI(info)
                 }
                 

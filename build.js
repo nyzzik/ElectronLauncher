@@ -20,8 +20,8 @@ builder.build({
     config: {
         appId: 'nytrolauncher',
         productName: 'Nytro Launcher',
-        artifactName: '${productName}.${ext}',
-        copyright: 'Copyright © 2018-2019 nyzzik',
+        artifactName: '${productName}-setup-${version}.${ext}',
+        copyright: 'Copyright © 2018-2020 nyzzik',
         directories: {
             buildResources: 'build',
             output: 'dist'
